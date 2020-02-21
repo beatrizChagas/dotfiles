@@ -1,0 +1,29 @@
+[user]
+	name = Beatriz Chagas
+	email = beatriznery.12@gmail.com
+[github]
+  username = beatrizChagas
+	user = beatrizChagas
+[core]
+	excludesfile = ~/.gitignore_global
+  autosetuprebase = always
+[color]
+  ui = auto
+[alias]
+  st  = status --short --branch
+  ci  = commit
+  br  = branch
+  co  = checkout
+  df  = diff
+  lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  lgm = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches
+  who = shortlog -s --
+  dft = difftool -y
+	d = difftool
+[push]
+	default = simple
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
