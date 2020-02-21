@@ -1,0 +1,34 @@
+# some more ls aliases
+alias ll='ls -lh'
+alias la='ls -A'
+alias l='ls -CF'
+alias ..='cd ..'
+alias ...='cd ..; ll'
+alias home='cd ~'
+
+# GIT
+alias current-branch='git branch | grep \* | sed "s/^\* //g"'
+alias gitrb='git fetch --prune; git rebase origin/`current-branch`'
+alias gp='git push'
+alias git-last-commit-for-all-branches='for branch in `git branch -r | grep -v HEAD`;do echo -e `git show --format="%ci %cr" $branch | head -n 1` \\t$branch; done | sort -r'
+
+# GEM
+alias gl='gem list'
+alias glg='gem list | grep'
+alias gi='gem install $1 --no-ri --no-rdoc'
+alias sgi='sudo gem install $1 --no-ri --no-rdoc'
+alias gu='gem update --no-ri --no-rdoc'
+alias sgu='sudo gem update --no-ri --no-rdoc'
+
+#DEV
+alias bi='bundle install'
+alias bu='bundle update'
+alias be="bundle exec"
+alias guard='be guard'
+alias rspec='be rspec'
+alias rs='bin/rails s'
+alias rc='bin/rails c'
+alias rv='bin/rails -v'
+
+# others
+alias myip='curl -s http://checkrealip.com/ | grep "Current IP Address"'
