@@ -5,4 +5,4 @@ do
   [[ -s $HOME/.$filename ]] && rm $HOME/.$filename
   ln -sf $PWD/$filename ~/.$filename
 done
-source ~/.bashrc
+source ~/.bash_profile
