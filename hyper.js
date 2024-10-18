@@ -160,6 +160,10 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     "hyper-pane",
+    "hypercwd",
+    "hyper-search",
+    "hyper-highlight-active-pane",
+    "hyper-broadcast",
   ],
 
   // in development, you can create a directory under
