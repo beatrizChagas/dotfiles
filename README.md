@@ -1,4 +1,4 @@
-Dotfiles for Linux
+Dotfiles for MacOS
 ==================
 
 ## Setup
